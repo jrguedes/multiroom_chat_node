@@ -14,7 +14,7 @@ module.exports = function (application) {
             case 'chat':
                 return [
                     check('apelido').not().isEmpty().withMessage('O apelido é obrigatório'),
-                    check('apelido').isLength({ min: 3 }).withMessage('Deve conter pelo menos 3 caracteres')
+                    check('apelido').isLength({ min: 3, max: 15 }).withMessage('O Apelido deve conter entre 3 a 15 caracteres')
                 ];
 
             default:
