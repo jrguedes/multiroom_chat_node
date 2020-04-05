@@ -22,7 +22,7 @@ module.exports.iniciaChat = function (application, errors, req, res) {
             });
 
 
-        res.render('chat');
+        res.render('chat', {dadosForm:dadosForm});
     }
 
 
